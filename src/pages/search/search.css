@@ -1,0 +1,25 @@
+
+
+.search-container{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 1rem 2rem;  
+    background-color: rgb(0, 0, 0);  
+}
+
+.search-container::-webkit-scrollbar{
+    width: 0;
+}
+
+.search-tag{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-family: cursive,"poppins","vernada";
+    background-color: rgb(46, 46, 46);
+    padding: 1rem;
+    border-radius: 20px;
+}

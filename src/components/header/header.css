@@ -1,0 +1,126 @@
+@import "../../index.css";
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.app-header {
+	width: 100%;
+	height: 10vh;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 0rem 1rem;
+}
+
+.h-icon {
+	font-size: 1.2rem;
+	margin: auto 0.6rem;
+	border: none;
+	box-shadow: 2px 2px 7px rgb(44, 44, 44), 2px 2px 7px rgb(97, 97, 97) inset;
+	padding: 0.6rem;
+	border-radius: 50%;
+	background-color: rgb(41, 41, 41);
+}
+
+.features .user-image{
+	width: 2.5rem;
+	height: 2.3rem;
+	border-radius: 50%;
+	margin: auto .6rem;
+	box-shadow: 2px 2px 7px rgb(0, 0, 0), 2px 2px 7px rgb(97, 97, 97) inset;
+}
+
+.logo {
+	justify-content: space-between;
+}
+
+.logo p {
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+}
+.youtube {
+	color: var(--brand-color);
+	background-color: var(--text-color);
+	border-radius: 50%;
+	padding: 0.3rem;
+	object-fit: cover;
+}
+
+.h-icon:hover {
+	color: rgb(197, 197, 197);
+	cursor: pointer;
+}
+
+.youtube:hover {
+	color: var(--brand-color);
+}
+
+.search-bar {
+	flex: 0.6;
+	border: 1px solid var(--hover-color);
+	border-radius: 4px;
+	height: 2.4rem;
+	border: none;
+}
+
+.search-bar input {
+	height: 100%;
+	width: 90%;
+	padding: 0 1rem;
+	background-color: transparent;
+	border: none;
+	color: var(--text-color);
+	border-radius: 10px;
+	border: 1px solid  rgb(130, 130, 130);
+}
+
+.search-bar input:focus{
+	outline: 1px solid  rgb(184, 184, 184);
+}
+
+.search-bar .btn {
+	height: 100%;
+	width: 10%;
+	background-color: transparent;
+	border: none;
+	border-left: 1px solid var(--hover-color);
+	color: var(--text-color);
+}
+
+.search-bar .search {
+	font-size: 1.2rem;
+}
+
+@media (max-width: 1100px) {
+	.logo .youtube,
+	.logo p {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	
+	.app-header {
+		justify-content: space-between;
+	}
+
+	.search-bar {
+		padding: 0 1rem 0 1rem;
+		flex: 1;
+	}
+
+	.app-header .features {
+		display: none;
+	}
+
+}
+
+@media (max-width: 600px) {
+	.search-bar button {
+		display: none;
+	}
+}

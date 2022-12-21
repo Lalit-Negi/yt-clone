@@ -1,0 +1,58 @@
+@import "../../index.css";
+
+
+.watch-screen{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.watch-screen-left{
+    width: 60%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.watch-screen-left::-webkit-scrollbar{
+    width: 0;
+}
+
+.watch-screen-video-player {
+    height: 74%;
+    width: 100%;
+}
+
+.watch-screen-video-player iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.watch-screen-right{
+    width:40%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    display: flex;
+    flex-direction: column;
+    padding:  0 1rem;
+}
+
+.watch-screen-right::-webkit-scrollbar{
+    width: 0;
+    scroll-behavior: smooth;
+}
+
+@media (max-width:900px) {
+
+    .watch-screen-right , .watch-screen-left{
+        width: 100%;
+    }
+
+    .watch-screen{
+        display: flex;
+        flex-direction: column;
+    }
+}

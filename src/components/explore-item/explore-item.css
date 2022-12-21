@@ -1,0 +1,9 @@
+@import "../../index.css";
+
+.explore-item{  
+    height: 160px;
+    padding:1rem 2rem;
+    background-color: transparent;
+    background-color: rgb(32, 110, 255);
+    border-radius: 10px;      
+}

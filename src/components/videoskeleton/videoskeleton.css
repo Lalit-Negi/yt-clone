@@ -1,0 +1,24 @@
+.skeleton-video-card {
+	width: 230px;
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+.skeleton-inner-card {
+	display: flex;
+	align-items: center;
+}
+
+.skeleton-outer-card {
+	margin: 0.6rem 0;
+}
+
+.skeleton-video-icon {
+	margin-right: 20px;
+}
+
+@media (max-width: 540px) {
+	.skeleton-video-card {
+		width: 100%;
+        padding: 1rem;
+	}
+}

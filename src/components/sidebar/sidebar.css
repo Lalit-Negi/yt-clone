@@ -1,0 +1,76 @@
+@import "../../index.css";
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.app-sidebar {
+	width: 240px;
+	height: 100%;
+	background-color: black;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border: 2px solid var(--hover-color);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	padding: 1rem 0;
+}
+
+.app-sidebar::-webkit-scrollbar {
+	width: 0px;
+}
+
+.s-icon {
+	font-size: 1.5rem;
+	color: var(--text-color);
+	margin: auto 1rem;
+}
+
+.app-sidebar p {
+	font-size: 1rem;
+	color: var(--text-color);
+}
+
+.app-sidebar > div {
+	width: 85%;
+	height: 2.8rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 20px;
+	margin: 0.4rem auto;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.app-sidebar > div:hover {
+	background-color: rgba(158, 156, 156, 0.4)}
+
+hr {
+	width: 90%;
+	margin: 1rem auto;
+}
+
+.unactive {
+	display: none;
+}
+
+@media (max-width: 560px) {
+	.app-sidebar {
+		width: 200px;
+	}
+}
+
+@media (max-width: 260px) {
+
+	.app-sidebar{
+		width: 90px;
+	}
+	.app-sidebar p {
+		display: none;
+	}
+}
