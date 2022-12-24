@@ -20,7 +20,7 @@ const Header = ({ setToggleSidebar }) => {
 		console.warn("user data not found");
 		sessionStorage.removeItem("user-accesstoken");
 		sessionStorage.removeItem("user-profile");
-		navigate("/auth");
+// 		navigate("/auth");
 	}
 
 	const search = (event) => {
@@ -53,7 +53,7 @@ const Header = ({ setToggleSidebar }) => {
 				<i className="bx  h-icon  bxs-video-plus video"></i>
 				<i className="bx  h-icon  bxs-grid grid"></i>
 				<i className="bx  h-icon  bxs-bell bell"></i>
-				<img src={user_pic} alt="#" className="user-image" />
+// 				<img src={user_pic} alt="#" className="user-image" />
 			</div>
 		</header>
 	);
