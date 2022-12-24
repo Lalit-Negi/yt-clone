@@ -98,14 +98,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
 				<p>log out</p>
 			</div>
 
-			{/* 
-			<div className=" flex disclaimer">
-				<p>
-					AboutPressCopyrightContact usCreatorAdvertiseDevelopers
-					TermsPrivacyPolicy & SafetyHow YouTube worksTest new features © 2022
-					Google LLC
-				</p>
-			</div> */}
+			
 		</aside>
 	);
 };
