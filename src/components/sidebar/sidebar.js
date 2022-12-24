@@ -12,7 +12,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
 		dispatch(LOGOUT());		
 		sessionStorage.removeItem("user-accesstoken");
 		sessionStorage.removeItem("user-profile");
-		navigate("/auth");
+// 		navigate("/auth");
 	};
 
 	const goHome = () => {
